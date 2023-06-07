@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  todo_db:
+    image: postgres:alpine
+    ports:
+      - 5460:5432
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=todo
+      - SSLMODE=disable
