@@ -33,7 +33,7 @@ func main() {
 		}
 	}()
 
-	fmt.Println("App Started")
+	fmt.Println("Hello, App Started!")
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 
